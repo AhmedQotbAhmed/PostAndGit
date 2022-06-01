@@ -33,7 +33,7 @@ public class HttpConnection extends AsyncTask<String, String, String> {
     String Stringurl;
     DatabaseHandler databaseHandler ;
     Map<String, List<String>> headerFields;
-   String requestHeaders;
+   String requestHeaders="";
     public static ConnectionListener connectionListener;
 
     public HttpConnection(Context context, TextView view, String postData, String methode) {
@@ -83,7 +83,7 @@ public class HttpConnection extends AsyncTask<String, String, String> {
                 writer.write(jsonPostData.toString());
                 writer.flush();
             }
-            requestHeaders = urlConnection.getRequestProperties().toString();
+//            requestHeaders = urlConnection.getRequestProperties().toString();
             headerFields = urlConnection.getHeaderFields();
 //
             int code = urlConnection.getResponseCode();
@@ -139,16 +139,16 @@ public class HttpConnection extends AsyncTask<String, String, String> {
 
         try {
             Stringurl =params[0];
-//            URL url = new URL(params[0]);
-            URL url = new URL("https://reqres.in/api/users?page=2");
+            URL url = new URL(params[0]);
+//            URL url = new URL("https://reqres.in/api/users?page=2");
 //            URL url = new URL("https://documentation.bonitasoft.com/create-your-first-project-web-rest-api-and-maven");
 //            URL url = new URL("https://techcrunch.com/wp-json/wp/v2/posts?per_page=100&context=embed");
 
             urlConnection = (HttpURLConnection) url.openConnection();
             // headerResponse
 //            urlConnection.
-            Log.e("tagggggggggggggggggggggg", urlConnection.getRequestProperties().toString());
-            requestHeaders = urlConnection.getRequestProperties().toString();
+
+//            requestHeaders = urlConnection.getRequestProperties().toString();
             headerFields = urlConnection.getHeaderFields();
 
             int code = urlConnection.getResponseCode();
