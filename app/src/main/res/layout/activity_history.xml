@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.HistoryActivity">
+    <Button
+        android:id="@+id/btn_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+    android:layout_centerHorizontal="true"
+        android:background="@drawable/button_shape"
+        android:onClick="delete"
+        android:text="Delete" />
+    <LinearLayout
+        android:id="@+id/linearSort"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:layout_below="@+id/btn_delete"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <Button
+            android:onClick="sort"
+            android:id="@+id/all_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_shape"
+            android:fontFamily="@font/codefont"
+            android:minHeight="55dp"
+            android:text="All"
+            android:textAllCaps="false"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:onClick="sort"
+            android:id="@+id/post_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_shape"
+            android:fontFamily="@font/codefont"
+            android:minHeight="55dp"
+            android:text="Post"
+            android:textAllCaps="false"
+            android:textSize="12dp" />
+
+        <Button
+            android:onClick="sort"
+            android:id="@+id/get_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_shape"
+            android:fontFamily="@font/codefont"
+            android:minHeight="55dp"
+            android:text="Get"
+            android:textAllCaps="false"
+            android:textSize="12dp" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linearSort"
+        android:clipToPadding="false"
+        android:padding="20dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/item_request" />
+
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Internship_task</string>
+    <string name="hint">***Please use the same sequence*** \nVariable oneSpace value newLine \nname morpheus \njob leader\nemail eve.holt@reqres.in\npassword pistol\n</string>
+
+    <string-array name="method">
+        <item>GET</item>
+        <item>POST</item>
+    </string-array>
+
+</resources>
