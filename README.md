@@ -43,7 +43,7 @@ Technology Used: <br/>
  <p align="center">
  <br/>
  <br/>
- <img src="https://user-images.githubusercontent.com/50117886/171480211-8e0b656d-b014-45a1-bc36-8246e2487a62.jpeg" width="250" title="">
+ <img src="https://user-images.githubusercontent.com/50117886/171480211-8e0b656d-b014-45a1-bc36-8246e2487a62.jpeg" title="">
 </p>
 
 
