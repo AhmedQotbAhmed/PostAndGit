@@ -1,4 +1,4 @@
-# Internship_task
+#
 Here are some of the methods that can be used this app:<br/>
 1.Post method<br/>
 2.Request Body<br/>
@@ -14,7 +14,7 @@ Technology Used: <br/>
 ● HttpURLConnection<br/>
 ● SQlite<br/> 
 ● RecyclerView<br/> 
-● roadcastReceiver
+● BroadcastReceiver
 <br/>
 <br/>
 <br/>
